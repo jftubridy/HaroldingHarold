@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Ticket(props){
+function Staff(props){
   return (
     <div>
       <h3>{props.location} - {props.names}</h3>
@@ -9,20 +9,21 @@ function Ticket(props){
         p {
           color: red;
         }
-      `}</style><em>{props.issue}</em></p>
+      `}</style><em>{props.issue} - {props.picture}</em></p>
       <hr/>
     </div>
   );
 }
-// propTypes is declaring a propTypes property on our Ticket componenent
+// propTypes is declaring a propTypes property on our Staff componenent
 // PropTypes is referring to the PropTypes class we import at the top
-Ticket.propTypes = {
+Staff.propTypes = {
   names: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
-  issue: PropTypes.string
+  issue: PropTypes.string,
+  picture: PropTypes.string
 };
 
-export default Ticket;
+export default Staff;
 
 
 /*

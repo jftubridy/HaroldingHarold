@@ -5,15 +5,7 @@ import { Link } from 'react-router-dom';
 function Header() {
   return (
     <div>
-      <h1><style jsx> {`
-    h1 {
-      color: black;
-    }
-    h1:hover {
-      color: green;
-    }
-    `}</style>Help Queue</h1>
-      <Link to="/">Home</Link> | <Link to="/newticket">Create Ticket</Link>
+      <Link to="/">Home</Link> | <Link to="/AboutUs">About us</Link> | <Link to="/StorySuggestion">Suggest a story to be covered</Link> | <Link to="/ViewStories">View suggested stories</Link>
     </div>
   );
 }
