@@ -3,7 +3,7 @@ import React from 'react';
 function StorySuggestion(){
   return(
     <div>
-    <h1><style jsx> {`
+      <h1><style jsx> {`
     h1 {
       color: black;
     }

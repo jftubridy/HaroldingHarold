@@ -1,5 +1,4 @@
 import React from 'react';
-// import reallyAdorableKitty from '../assets/images/kitty.jpg';
 import CEOHarold from '../assets/images/CEOHarold.jpg';
 import ChiefEditorHarold from '../assets/images/ChiefEditorHarold.jpg';
 import FinaceHarold from '../assets/images/FinanceHarold.jpg';
@@ -9,7 +8,7 @@ import HrHarold from '../assets/images/HrHarold.jpg';
 function AboutUs(){
   return (
     <div>
-            <h1><style jsx> {`
+      <h1><style jsx> {`
     h1 {
       color: black;
     }

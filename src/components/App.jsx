@@ -7,18 +7,33 @@ import Error404 from './Error404';
 import AboutUs from './AboutUs';
 import Home from './Home';
 import StorySuggestion from './StorySuggestion';
+import Image from '../assets/images/background.jpg';
 
 function App(){
+  const BackgroundStyle = {
+    // /* The image used */
+     backgroundImage: `url(${Image})`,
+
+    /* Full height */
+    backgroundPosition: 'fixed', 
+    backgroundSize: 'cover',
+    backgroundRepeat: 'repeat',
+    minHeight: '100vh',
+    minWidth: '100%'
+
+  };
   return (
-    <div>
-      <Header/>
-      <Switch>
-        <Route exact path='/' component={Home} />
-        <Route exact path='/AboutUs' component={AboutUs} /> 
-        <Route path='/ViewStories' component={ViewStories} />
-        <Route exact path='/StorySuggestion' component={StorySuggestion} />
-        <Route component={Error404} />
-      </Switch>
+    <div style={BackgroundStyle}>
+      
+        <Header/>
+        <Switch>
+          <Route exact path='/' component={Home} />
+          <Route exact path='/AboutUs' component={AboutUs} /> 
+          <Route path='/ViewStories' component={ViewStories} />
+          <Route exact path='/StorySuggestion' component={StorySuggestion} />
+          <Route component={Error404} />
+        </Switch>
+      
     </div>
   );
 }

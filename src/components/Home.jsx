@@ -4,12 +4,12 @@ import homepage from '../assets/images/homepage.jpg';
 
 
 function Home() {
-    const HomeStyle = {
-        textAlign: 'center'
-    }
+  const HomeStyle = {
+    textAlign: 'center'
+  };
   return (
     <div style = {HomeStyle}>
-    <h1><style jsx> {`
+      <h1><style jsx> {`
     h1 {
       color: black;
     }

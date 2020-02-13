@@ -30,12 +30,12 @@ var masterViewStories = [
 
 function ViewStories(){
   const PageStyle = {
-      backgroundColor: 'blue'
-  }
+    backgroundColor: 'blue'
+  };
 
   return (
     <div>
-          <h1><style jsx> {`
+      <h1><style jsx> {`
     h1 {
       color: black;
     }
@@ -46,12 +46,12 @@ function ViewStories(){
      
       <hr/>
       <div style = {PageStyle}>
-      {masterViewStories.map((stories, index) =>
-        <Stories names={stories.names}
-          location={stories.location}
-          issue={stories.issue}
-          key={index}/>
-      )}
+        {masterViewStories.map((stories, index) =>
+          <Stories names={stories.names}
+            location={stories.location}
+            issue={stories.issue}
+            key={index}/>
+        )}
       </div>
     </div>
   );
